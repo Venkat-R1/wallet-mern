@@ -1,13 +1,14 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-const router = express.Router();
+const bodyParser = require('body-parser');
 const path = require('path');
 require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 5000;
 // app.use(express.static(path.join(__dirname, 'client/public')));
+app.use(bodyParser.json());
 app.use(cors());
 app.use(express.json());
 
@@ -36,7 +37,7 @@ const transSchema = mongoose.Schema({
 const Users = mongoose.model('Users', usersSchema)
 
 
-app.get('/users',(req, res)=>{
+app.get('/Users',(req, res)=>{
   Users.find()
     .then(users => res.json(users))
     .catch(err => res.status(400).json('Error: ' + err));

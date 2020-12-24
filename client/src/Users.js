@@ -6,11 +6,11 @@ import Axios from "axios"
 
 export default class Users extends Component {
     state = {
-      persons: [{name:"venkat"}]
+      persons: []
     }
   
     componentDidMount() {
-      Axios.get(`/users`)
+      Axios.get(`/Users`)
         .then(res => {
           const persons = res.data;
           console.log("data",res.data);

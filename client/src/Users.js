@@ -10,7 +10,7 @@ export default class Users extends Component {
     }
   
     componentDidMount() {
-      Axios.get(`/Users`)
+      Axios.get(`/User`)
         .then(res => {
           const persons = res.data;
           console.log("data",res.data);

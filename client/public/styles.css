@@ -1,0 +1,28 @@
+.img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top:2%;
+    left:15%;
+}
+.userImg{
+    height:100px;
+    width:100px;
+}
+.container .img{
+    margin-top:0;
+}
+.container{
+    width:50%;
+    margin:auto;
+    padding:5px 0;
+}
+@media (max-width:600px){
+    .container{
+        width:70%;
+    }
+    .container .img{
+        left:15%!important;
+    }
+}

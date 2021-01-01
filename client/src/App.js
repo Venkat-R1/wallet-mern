@@ -1,14 +1,23 @@
 import Users from "./Users.js"
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import Trans from "./Trans.js"
+import Pay from "./Pay.js"
+import Request from "./Request.js"
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import './App.css';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        hello world
-        <Route path="/users" exact component={Users}/>
         
+          <Route path="/:id/pay" exact component ={Pay} />
+          <Route path="/:id" exact component={Trans}/>
+          <Route path ='/:id/request'  component = {Request} />
+          <Switch>
+           <Route path="/" exact component={Users}/>
+          </Switch>
+          
+
       </div>
     </Router>
       

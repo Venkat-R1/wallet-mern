@@ -1,0 +1,73 @@
+h2{
+    font-size:150%;
+}
+h3{
+    text-align:right;
+    margin-right:20%;
+}
+h4{
+    text-align:right;
+    font-size:125%;
+}
+.hr{
+    border: 1px solid black;
+    background-color:black;
+    margin-top:10px;
+}
+
+.green{
+    color:green;
+}
+.red{
+    color:red;
+}
+.date{
+
+    text-align:left;
+    
+}
+.amount{
+    
+    text-align:right;
+    padding-top:40px ;
+}
+.btn{
+   margin:10px;
+}
+.balance{
+    padding-top:20px;
+    font-size: 160%;
+}
+.history{
+    margin-top:20px;
+}
+.active{
+    background-color:black;
+    color:white;
+}
+.trans,.req{
+    display:block;
+}
+.transHidden,.reqHidden{
+    display:none;
+}
+.tabs{
+    cursor:pointer;
+    display:inline;
+    padding:0 70px 10px;
+    margin-bottom:0;
+}
+.container .img{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    position: absolute;
+    left:27%;
+}
+@media (max-width:1000px){
+    .buttons{
+        position: relative;
+        left:20%;
+        
+    }
+}

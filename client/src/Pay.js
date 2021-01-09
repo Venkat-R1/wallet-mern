@@ -62,7 +62,7 @@ export default class Pay extends Component{
         Axios.post('/User/pay',trans)
           
         
-        window.location.assign("http://localhost:3000/"+this.state.userId);
+        window.location = '/'+this.state.userId;
         
     }
 

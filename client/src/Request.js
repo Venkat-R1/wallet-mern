@@ -41,6 +41,7 @@ export default class Request extends Component{
     }
 
     onSubmit(e){
+        e.preventDefault();
         const req_ = {
             from:this.state.from,
             to:this.state.to,
@@ -49,7 +50,9 @@ export default class Request extends Component{
             dateOnly:this.state.dateOnly
         }
         Axios.post('/User/request',req_)
-        window.location.assign('http://localhost:3000/'+this.state.userId);
+
+
+        window.location = '/'+this.state.userId;
     }
     render(){
         return <div>
